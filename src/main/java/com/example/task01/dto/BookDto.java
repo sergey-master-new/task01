@@ -15,6 +15,7 @@ import javax.validation.constraints.*;
 @NoArgsConstructor
 public class BookDto {
 
+    // Вопрос, зачем  @NotNull
     @NotNull(groups = OnUpdate.class, message = "Id should be not Null")
     private Long id;
 
