@@ -43,4 +43,6 @@ public class BookDto {
     @NotNull(message = "Price is mandatory")
     @PositiveOrZero(message = "Price cannot be negative")
     private Integer priceInKopecks;
+    
+    выраылворалыовраловырлавырало
 }
