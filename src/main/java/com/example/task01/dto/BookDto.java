@@ -3,26 +3,7 @@ package com.example.task01.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.*;
-
-
-@Data
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
-public class BookDto {
-
-   
-    @NotNull(message = "Id should be not Null")
-    private Long id;
-
-    @NotBlank(message = "ISBN is mandatory")
-    @Pattern(regexp = "^(?=(?:\\D*\\d){10}(?:(?:\\D*\\d){3})?$)[\\d-]+$",
-            message = "Incorrect ISBN number entered")
-    private String isbn;
 
     @NotBlank(message = "Book name is mandatory")
     @Size(min = 2, max = 40, message = "Book name should be between 2 and 40 characters")
