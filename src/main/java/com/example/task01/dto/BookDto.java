@@ -1,6 +1,6 @@
 package com.example.task01.dto;
 
-import com.example.task9openlibraryrefactoring2.exception.marker.OnUpdate;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +16,7 @@ import javax.validation.constraints.*;
 public class BookDto {
 
     // Вопрос, зачем  @NotNull
-    @NotNull(groups = OnUpdate.class, message = "Id should be not Null")
+    @NotNull(message = "Id should be not Null")
     private Long id;
 
     @NotBlank(message = "ISBN is mandatory")
@@ -43,6 +43,5 @@ public class BookDto {
     @NotNull(message = "Price is mandatory")
     @PositiveOrZero(message = "Price cannot be negative")
     private Integer priceInKopecks;
-    
-    выраылворалыовраловырлавырало
+
 }
